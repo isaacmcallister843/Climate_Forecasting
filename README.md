@@ -10,4 +10,4 @@ The actual climate data is the same dataset as the heatmapping project. The issu
 The main issue with the approach I took was I chose a data heavy method (LSTM + Random Forest) for a project that didn't have enough data. If I would do this project again I would probably just use Prophet, which expects seasonal trends and is much more lightweight. Prophet doesn't support multivariable forecasts however. I hope to revist this project when 2020 and 2021 feild data is avalible, the model should perform alot better. 
 
 ![Results](https://user-images.githubusercontent.com/78721353/108029417-41132d80-6fe2-11eb-9b09-45f566d5328b.png)
-### Figure 1 
+#### Figure 1 
