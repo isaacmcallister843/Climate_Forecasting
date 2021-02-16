@@ -10,4 +10,10 @@ The climate station is from a met station installed on the mine site by a contra
 The main issue with the approach I took was I chose a data heavy method (LSTM + Random Forest) for a project that didn't have enough data. If I would do this project again I would probably just use Prophet, which expects seasonal trends and is much more lightweight. Prophet doesn't support multivariable forecasts however. I hope to revisit this project when 2020 and 2021 field data is available, the model should perform a lot better. 
 
 ![Results](https://user-images.githubusercontent.com/78721353/108029417-41132d80-6fe2-11eb-9b09-45f566d5328b.png)
-#### Figure 1 
+#### Figure 1: Multivariable Predictions for Met Station
+
+The next application was forecasting for the dataset in the heat mapping project. This is an exciting application and would allow us to create predictive heatmaps far into the future. However, the issue with the random forest algorithm mentioned above can be seen here. Camera 1902 (yellow points) actually stops recording data around February 1st 2019, so the model has to extrapolate with very limited data. The random forest algorithm has a very small sample size and can't predict accurately. 
+
+![Camera Temp Example](https://user-images.githubusercontent.com/78721353/108029838-0a89e280-6fe3-11eb-88da-28e8d713185a.png)
+
+#### Figure 2: Temperature Forecasting for Heatmapping dataset
