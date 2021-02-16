@@ -1,5 +1,5 @@
-path_data = "C:/Users/dmcallister/Desktop/Temp_mapping/Raw Data"
-path_out = "C:/Users/dmcallister/Desktop/Temp_mapping/Temp_data"
+path_data = "raw data path"
+path_out = "output path"
 library("tidyverse")
 
 file.names <- dir(path_data, pattern ="csv")
@@ -39,7 +39,7 @@ for(i in 1:length(file.names)){
   out_file <- as.data.frame(out_file)
   
   for (item in 1:(nrow(out_file))){
-    out_file[item,2] <- as.numeric(str_split(out_file[item,2],"Â")[[1]][1])
+    out_file[item,2] <- as.numeric(str_split(out_file[item,2],"Ã‚")[[1]][1])
   }
   
   setwd(path_out)
